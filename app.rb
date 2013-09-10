@@ -1,15 +1,18 @@
 require 'sinatra'
 require 'pony'
 
-Pony.options = { :from => 'info@peekaboo.com', 
-				:via => :smtp, 
-				:via_options => { :host => ENV['POSTMARK_SMTP_SERVER'], 
-									:port => '25', 
-									:enable_starttls_auto => true,
-									:user_name => ENV['POSTMARK_API_KEY'],
-									:domain => 'salty-headland-5059.heroku.com',
-    								:password => ENV['POSTMARK_API_KEY'],
-    								:authentication => :plain} }
+Pony.options = {
+  :via => :smtp,
+  :via_options => {
+    :address => 'smtp.sendgrid.net',
+    :port => '587',
+    :domain => 'heroku.com',
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+}
 
 get '/' do
 	erb :index
@@ -17,6 +20,7 @@ end
 
 post '/thanks' do
   	Pony.mail :to => params[:email],
+  			:from => 'info@peekaboo.com',
             :subject => "Test, #{params[:name]}!",
             :body => erb(:email)
 	erb :thanks

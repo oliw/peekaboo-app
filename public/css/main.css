@@ -1,0 +1,69 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.form-inline .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.how-to-diagram {
+	height: 300px;
+}
+
+.center {
+	text-align: center;
+}
+
+#hero-background {
+	background-image: url(../img/herobackground.jpg);
+	background-size: cover;
+}
+
+#hero {
+	padding-bottom: 10px;
+	color: white;
+}
+
+#thanks {
+	background-image: url(../img/herobackground.jpg);
+	background-size: cover;
+		padding-bottom: 10px;
+	color: white;
+}
+
+#hero a {
+	color: white;
+}
+
+#how-it-works p {
+	text-align: justify;
+}
+
+.my-icon-frame {
+	text-align: center;
+	width: 100%;
+	height: 12em;
+	padding-bottom: 10px;
+}
+
+.icon-6 {
+font-size: 20em;
+}
+
+.icon-5 {
+	font-size: 12em;
+}
+
+.icon-4 {
+	margin-top: 2em;
+	font-size: 8em;
+}
+
+
+
+

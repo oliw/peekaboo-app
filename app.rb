@@ -21,7 +21,8 @@ end
 post '/thanks' do
   	Pony.mail :to => params[:email],
   			:from => 'info@peekaboo.com',
-            :subject => "Test, #{params[:name]}!",
+  			:bcc => 'oliverwilkie@gmail.com',
+            :subject => "Welcome to Peekaboo, #{params[:name]}!",
             :body => erb(:email)
 	erb :thanks
 end

@@ -4,6 +4,46 @@
    Author's custom styles
    ========================================================================== */
 
+.navbar-brand {
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+
+}
+
+.color-1 {
+	color: #E32469;
+}
+
+.color-2 {
+	color: #F7D4E1;
+}
+
+.color-3 {
+	color: #F7D4E1;
+}
+
+.color-4 {
+	color: #94CA19;
+}
+
+.color-5 {
+	color: #52A3E0;
+}
+
+.color-6 {
+	color: #B9F9E8;
+}
+
+.color-7 {
+	color: #E95C47;
+}
 
 .form-inline .form-group {
 	margin-left: 0;
@@ -27,6 +67,7 @@
 #hero {
 	padding-bottom: 10px;
 	color: white;
+	padding-top: 10px;
 }
 
 #thanks {

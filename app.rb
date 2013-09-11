@@ -18,11 +18,19 @@ get '/' do
 	erb :index
 end
 
+get '/thanks' do
+	erb :thanks
+end
+
 post '/thanks' do
   	Pony.mail :to => params[:email],
   			:from => 'info@peekaboo.com',
   			:bcc => 'oliverwilkie@gmail.com',
             :subject => "Welcome to Peekaboo, #{params[:name]}!",
-            :body => erb(:email)
+            :body => erb(:email, layout: false)
+	erb :thanks
+end
+
+get '/howto' do
 	erb :thanks
 end

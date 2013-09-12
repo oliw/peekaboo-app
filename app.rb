@@ -27,7 +27,7 @@ post '/thanks' do
   			:from => 'no-reply@peekaboolabs.com',
   			:bcc => 'peekaboolabs@gmail.com',
             :subject => "Welcome to Peekaboo, #{params[:name]}!",
-            :body => erb(:email, layout: false)
+            :body => erb(:emaildelay, layout: false)
 	erb :thanks
 end
 

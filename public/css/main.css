@@ -202,11 +202,14 @@ font-size: 20em;
   height: 200px;
 }
 
+.graph-feedback-long {
+  height: 300px;
+}
+
 .graph-feedback-placeholder {
   height: 100%;
 }
 
 .graph-feedback-radio {
-  padding-top: 100px;
   text-align: left;
 }

@@ -197,3 +197,16 @@ font-size: 20em;
 .ribbon-green:after {
   right: 0;
 }
+
+.graph-feedback {
+  height: 200px;
+}
+
+.graph-feedback-placeholder {
+  height: 100%;
+}
+
+.graph-feedback-radio {
+  padding-top: 100px;
+  text-align: left;
+}

@@ -1,0 +1,55 @@
+<div id="hero-background">
+  <div class="jumbotron" id="thanks">
+    <div class="center">
+      <h1>Request more information</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+	<p class="lead">Want to request more information? At Peekaboo Labs, we strive to make our reports bigger and better based on the feedback we get from parents</p>
+	<p>Complete this form below if you would like to request extra information</p>
+
+	<form role="form" action="/feedback" method="POST" onsubmit="return validateForm()" >
+		<div class="form-group">
+		<input type="text" class="form-control" placeholder="Your name" name="name">
+		</div>
+		<div class="form-group">
+		<label for="request" class="control-label">Is there anything more you would like to find out for you and your baby?</label>
+		<textarea name="request" class="form-control" rows="5"></textarea>
+		</div>
+
+		<div class="form-group">
+		<label>How interesting/useful were the graphs in your original report?</label>
+		</div>
+		<div class="form-group graph-feedback">
+			<div class="col-md-4 graph-feedback-placeholder">
+				<a class="thumbnail">
+					<img src="js/vendor/holder.js/100%x200" alt="..."/>
+				</a>
+			</div>
+			<div class="col-md-8 graph-feedback-radio">
+				<label class="radio-inline">
+					<input type="radio" name="graph1" value="option1"> 1 (Not Useful)
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="graph1" value="option2"> 2
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="graph1" value="option3"> 3
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="graph1" value="option3"> 4
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="graph1" value="option3"> 5 (Useful)
+				</label>
+			</div>					
+		</div>					
+		<div class="form-group">
+		<small>Remember, we will never pass your information to anyone else</small>
+		</div>
+		<button type="submit" class="btn btn-default">Start looking for more information!</button>
+	</form>
+	<br/>
+</div>

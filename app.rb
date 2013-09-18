@@ -36,10 +36,12 @@ get '/howto' do
 end
 
 get '/feedback' do
-  if params[:who] != '123awdaikomaw'
-    erb :index
+  if params[:who] == '123awdaikomaw'
+    erb :'feedback-rylan'
+  elsif params[:who] == 'fsojpije899'
+    erb :'feedback-maxwell'
   else
-    erb :feedback
+    erb :index  
   end
 end
 

@@ -35,11 +35,11 @@ get '/howto' do
 	erb :thanks
 end
 
-get '/feedback' do
+get '/feedback/123awdaikomaw' do
   erb :feedback
 end
 
-post '/feedback' do
+post '/feedback/123awdaikomaw' do
   Pony.mail :to => 'info@peekaboo-labs.com',
     :from => 'feedback-no-reply@peekaboo-labs.com',
         :subject => "Post-Report Feedback Received from #{params[:name]}!",

@@ -43,7 +43,7 @@ post '/feedback' do
   Pony.mail :to => 'info@peekaboolabs.com',
     :from => 'feedback-no-reply@peekaboolabs.com',
         :subject => "Post-Report Feedback Received from #{params[:name]}!",
-        :body => erb(:'feedback-email', layout: false)
+        :body => 'Test'
   erb :feedbackThanks
 end
 

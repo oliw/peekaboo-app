@@ -24,7 +24,7 @@ end
 
 post '/thanks' do
   	Pony.mail :to => params[:email],
-  			:from => 'no-reply@peekaboolabs.com',
+  			:from => 'no-reply@peekaboo-labs.com',
   			:bcc => 'peekaboolabs@gmail.com',
             :subject => "Welcome to Peekaboo, #{params[:name]}!",
             :body => erb(:emaildelay, layout: false)
@@ -40,10 +40,10 @@ get '/feedback' do
 end
 
 post '/feedback' do
-  Pony.mail :to => 'info@peekaboolabs.com',
-    :from => 'feedback-no-reply@peekaboolabs.com',
+  Pony.mail :to => 'info@peekaboo-labs.com',
+    :from => 'feedback-no-reply@peekaboo-labs.com',
         :subject => "Post-Report Feedback Received from #{params[:name]}!",
-        :body => 'Test'
+        :body => erb(:'feedback-email', layout: false)
   erb :feedbackThanks
 end
 

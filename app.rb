@@ -40,6 +40,8 @@ get '/feedback' do
     erb :'feedback-rylan'
   elsif params[:who] == 'fsojpije899'
     erb :'feedback-maxwell'
+  elsif params[:who] == 'kfjeslaeisdj'
+    erb :'feedback-eleanor'
   else
     erb :index  
   end
